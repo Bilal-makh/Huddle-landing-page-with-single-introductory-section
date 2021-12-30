@@ -1,0 +1,58 @@
+@import 'sass/variables';
+@import 'sass/global';
+@import 'sass/buttons';
+@import 'sass/Mixin';
+
+main {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+  @include breakpoint (mobile) {
+    padding: 20px;;
+  }
+  .logo {
+      padding-top: 40px;
+      width: 200px;
+      max-width: 100%;
+      @include breakpoint (mobile) {
+        padding: 20px;
+      }
+  }
+
+  .landing {
+    margin-top: 80px;
+    display: flex;
+    gap: 4rem;
+    @include breakpoint (mobile) {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+      gap: 2.5rem;
+    }
+    .info{
+      margin-top: 40px;
+      @include breakpoint (mobile) {
+        margin-top: 0;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+        @include breakpoint (mobile) {
+          max-width: 100%;
+          font-size: 1.5rem;
+        }
+
+      }
+      p {
+        opacity: .8;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+        @include breakpoint (mobile) {
+          max-width: 100%;
+        }
+      }
+    }
+    
+  }
+}

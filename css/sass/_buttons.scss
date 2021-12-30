@@ -1,0 +1,53 @@
+
+button {
+  padding: 15px 60px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  border: none;
+  color: $Violet;
+  background-color: #FFF ;
+  box-shadow: 0 5px 10px #00000080;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  &:hover {
+    color: #FFF;
+    background-color: $Soft-Magenta;
+  }
+
+}
+.social  {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  @include breakpoint(mobile) {
+    right: 33%;
+    bottom: -50px;
+    justify-content: center;
+  }
+  li{
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    a {
+      color: #FFF;
+    }
+    i {
+      transition: 0.3s ease-in;
+    }
+    &:hover {
+      border-color: $Soft-Magenta;
+    }
+
+    &:hover a {
+      color: $Soft-Magenta;
+    }    
+  }
+}
